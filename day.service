@@ -1,0 +1,11 @@
+[Unit]
+Description=Run dark.service every 1 minute
+
+[Service]
+Type=oneshot
+#Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+ExecStart=/home/wintersin/.themes/day.sh
+
+[Install]
+WantedBy=default.target
+

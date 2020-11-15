@@ -1,0 +1,10 @@
+[Unit]
+Description=Run dark.service every 1 minute
+
+[Timer]
+OnCalendar=*-*-* 19:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+
